@@ -1,0 +1,26 @@
+.footer {
+  background-image: url("./../../../public/image/footer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .footerMain {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+  }
+  .footerLeft {
+    text-align: center;
+  }
+
+  p {
+    color: rgba(0, 0, 0, 0.448);
+    line-height: 30px;
+  }
+  h6 {
+    margin-top: 50px;
+    font-size: large;
+    line-height: 50px;
+    
+  }
+}
