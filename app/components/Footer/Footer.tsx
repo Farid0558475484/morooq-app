@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 
 import logo from "./../../../public/image/logo1.svg";
 
