@@ -1,38 +1,4 @@
-.header {
-  background-color: #a9508a1d;
-
-  padding: 20px 0;
-  .headerTop {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 30px;
-  }
-
-  .headerText {
-    text-align: center;
-    padding: 20px 0;
-    p {
-      font-size: 30px;
-      font-weight: 800;
-      color: rgba(6, 6, 6, 0.711);
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .header {
-    .headerText {
-      text-align: center;
-      padding: 20px 0;
-      p {
-        font-size: 20px;
-        color: rgba(0, 0, 0, 0.711);
-      }
-    }
-  }
-}
-
+/* Styles for yourTest */
 .yourTest {
   display: flex;
   justify-content: center;
@@ -44,17 +10,20 @@
     font-weight: 700;
     cursor: pointer;
   }
+
   .activePast {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
+
     button {
       border: none;
       color: white;
       background: #ec2a7bb8;
       border-radius: 20px;
       padding: 10px 20px;
+
       &:hover {
         background: #ec106b;
       }
@@ -62,6 +31,7 @@
   }
 }
 
+/* Styles for testCard */
 .testCard {
   margin-top: 50px;
   border: 2px solid #ec2a7b0e;
@@ -70,35 +40,32 @@
   border-radius: 20px;
 }
 
-.main,
+/* Styles for main and practice */
 .practice {
   background-color: #a9508a1d;
 }
 
+/* Styles for satTestBtn */
 .satTestBtn {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-}
 
-.satTestBtn {
-  padding-right: 80px;
+  padding-right: 15px; /* Adjust as needed */
+
   button {
     border: none;
     background: #ec2a7b;
     color: white;
     padding: 10px 20px;
     border-radius: 20px;
+
     &:hover {
       background: #ec106cac;
     }
   }
 }
 
-.cardBorderRadius {
-  border-radius: 20px !important;
-}
+/* Additional Styles */
 
-.testCardDescription {
-  text-align: center;
-}
+

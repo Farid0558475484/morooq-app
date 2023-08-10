@@ -1,44 +1,22 @@
-"use client";
-import { Container, Row, Col } from "react-bootstrap";
-import styles from "./Home.module.scss";
-
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react";
+import CardItem from "./CardItem"; // Путь к вашей общей компоненте CardItem
+import styles from "./Main.module.scss";
 
 function Main() {
   return (
     <div className={styles.main}>
-      <Container fluid className="pt-5 pb-5">
-        <Row>
-          <div className={styles.yourTest}>
-            <h3 className={styles.title}> Your Test</h3>
-            <div className={styles.activePast}>
-              <div className={styles.activeBtn}>
-                <button>Active</button>
-              </div>
-              <div className={styles.pastPast}>
-                <button>Past</button>
-              </div>
-            </div>
+      <div className={styles.container}>
+        <div className={styles.row}>
+          <div className={styles.col}></div>
+          <div className={styles.col}>
+            <CardItem
+              title="You Have No Upcoming Test"
+              text="You can start a new test by clicking on the button below or clicking on the Start a new test button in the sidebar."
+            />
           </div>
-        </Row>
-        <Row>
-          <Col md={4}></Col>
-          <Col md={4}>
-            <div className={styles.testCard}>
-              <div className={styles.testCardTitle}>
-                <div className={styles.testCardDescription}>
-                  <h5>You Have No Upcoming Test</h5>
-                  <p>
-                    You can start a new test by clicking on the button below or
-                    clicking on the Start a new test button in the sidebar.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </Col>
-          <Col md={4}></Col>
-        </Row>
-      </Container>
+          <div className={styles.col}></div>
+        </div>
+      </div>
     </div>
   );
 }
