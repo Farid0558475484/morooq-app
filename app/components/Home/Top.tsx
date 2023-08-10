@@ -1,6 +1,6 @@
 import styles from "./Top.module.scss";
 
-function Top() {
+async function Top() {
   return (
     <div className={styles.topContainer}>
       <div className={styles.header}>

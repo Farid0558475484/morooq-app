@@ -1,3 +1,4 @@
+// SatText.tsx
 import React from "react";
 import Link from "next/link";
 import s from "./SatText.module.scss";

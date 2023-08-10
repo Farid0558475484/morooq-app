@@ -1,9 +1,11 @@
 import React from "react";
 import Link from "next/link";
-import styles from "./Bottom.module.scss";
+
 import CardItem from "./CardItem";
 
-function Bottom() {
+import styles from "./Bottom.module.scss";
+
+async function Bottom() {
   return (
     <div className={styles.practice}>
       <div className="container-fluid pt-5 pb-5">

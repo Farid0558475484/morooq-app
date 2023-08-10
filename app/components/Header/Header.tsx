@@ -5,7 +5,7 @@ import logo from "./../../../public/image/logo.svg";
 
 import styles from "./Header.module.scss";
 
-export function Header() {
+export async function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.container}>

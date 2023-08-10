@@ -1,8 +1,10 @@
 import React from "react";
-import CardItem from "./CardItem"; // Путь к вашей общей компоненте CardItem
+
+import CardItem from "./CardItem";
+
 import styles from "./Main.module.scss";
 
-function Main() {
+async function Main() {
   return (
     <div className={styles.main}>
       <div className={styles.container}>

@@ -1,12 +1,12 @@
 import React from "react";
+
 import styles from "./CardItem.module.scss";
 
 interface CardItemProps {
   title: string;
   text: string;
 }
-
-function CardItem({ title, text }: CardItemProps): JSX.Element {
+ function CardItem({ title, text }: CardItemProps): JSX.Element {
   return (
     <div className={`${styles.card} ${styles.cardBorderRadius}`}>
       <div className={styles.cardBody}>
