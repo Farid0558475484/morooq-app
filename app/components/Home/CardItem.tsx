@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Button } from "../Button/Button";
 import styles from "./CardItem.module.scss";
 
 interface CardItemProps {
@@ -12,7 +12,7 @@ interface CardItemProps {
       <div className={styles.cardBody}>
         <h5 className={styles.cardTitle}>{title}</h5>
         <p className={styles.cardText}>{text}</p>
-        <button className={styles.button}>Go somewhere</button>
+        <Button appearance="red">Go somewhere</Button>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "./../../../public/image/logo.svg";
-
+import user from "./../../../public/image/u2.png";
 import styles from "./Header.module.scss";
 
 export async function Header() {
@@ -16,7 +16,13 @@ export async function Header() {
         </div>
         <div className={styles.headerSignIn}>
           <h2 className={styles.userName}>Hacizade Farid</h2>
-          <i className="fa-solid fa-user"></i>
+          <Image
+
+            src={user}
+            alt="Morooq.com"
+            width={30}
+            height={30}
+          />
         </div>
       </div>
     </header>

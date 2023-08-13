@@ -4,7 +4,7 @@ import logo from "./../../../public/image/logo1.svg";
 
 import s from "./Footer.module.scss";
 
-function Footer() {
+async function Footer() {
   return (
     <footer className={s.footer}>
       <div className={s.footerMain}>

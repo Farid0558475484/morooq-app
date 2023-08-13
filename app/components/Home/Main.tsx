@@ -1,7 +1,5 @@
 import React from "react";
-
 import CardItem from "./CardItem";
-
 import styles from "./Main.module.scss";
 
 async function Main() {

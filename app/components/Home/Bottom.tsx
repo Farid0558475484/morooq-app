@@ -2,8 +2,10 @@ import React from "react";
 import Link from "next/link";
 
 import CardItem from "./CardItem";
+import { Button } from "../Button/Button";
 
 import styles from "./Bottom.module.scss";
+
 
 async function Bottom() {
   return (
@@ -39,7 +41,7 @@ async function Bottom() {
         <div className="row pt-5">
           <div className={styles.satTestBtn}>
             <Link href="/sat-test">
-              <button>Next Sat-test</button>
+            <Button appearance="pink">Start Sat-Test</Button>
             </Link>
           </div>
         </div>

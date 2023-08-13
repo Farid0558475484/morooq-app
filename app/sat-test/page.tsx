@@ -1,6 +1,6 @@
-// SatText.tsx
 import React from "react";
 import Link from "next/link";
+import { Button } from "./../components/Button/Button";
 import s from "./SatText.module.scss";
 
 interface SatInfoItemProps {
@@ -17,7 +17,7 @@ function SatInfoItem({ title, content }: SatInfoItemProps): JSX.Element {
   );
 }
 
-function SatText() {
+async function SatText() {
   return (
     <div className={s.satTest}>
       <div className={s.satTitle}>
@@ -41,10 +41,10 @@ function SatText() {
         </div>
         <div className={s.navButtons}>
           <Link href="/">
-            <button className={s.navButton}>Prev</button>
+          <Button appearance="pink">Prev</Button>
           </Link>
           <Link href="/exam">
-            <button className={s.navButton}>Next</button>
+          <Button appearance="pink">Next</Button>
           </Link>
         </div>
       </div>
