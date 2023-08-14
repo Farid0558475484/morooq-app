@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { Button } from "./../components/Button/Button";
+import  Button  from "./../components/Button/Button";
 import s from "./SatText.module.scss";
 
 interface SatInfoItemProps {

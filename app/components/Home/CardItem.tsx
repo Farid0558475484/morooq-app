@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../Button/Button";
+import Button from "./../Button/Button";
 import styles from "./CardItem.module.scss";
 
 interface CardItemProps {

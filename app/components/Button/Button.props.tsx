@@ -5,5 +5,5 @@ export interface ButtonProps
     HTMLButtonElement
   > {
   children: React.ReactNode;
-  appearance: "red" | "pink";
+  appearance: "red" | "pink" | "like" | "like-active";
 }
