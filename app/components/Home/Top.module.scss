@@ -1,0 +1,38 @@
+.header {
+  background-color: #a9508a1d;
+  padding: 20px 0;
+
+  .headerTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+  }
+
+  .headerText {
+    text-align: center;
+    padding: 20px 0;
+
+    p {
+      font-size: 30px;
+      font-weight: 800;
+      color: rgba(6, 6, 6, 0.711);
+      margin: 0; /* Добавляем отступы по умолчанию */
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    .headerTop {
+      padding: 0 15px;
+    }
+
+    .headerText {
+      padding: 10px 0;
+      p {
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.711);
+      }
+    }
+  }
+}

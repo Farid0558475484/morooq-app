@@ -8,3 +8,11 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+:root {
+  --red: #dc3545;
+  --red-light: #c82333;
+  --pink:#ec2a7b;
+  --pink-light: #ec106cac;
+
+}

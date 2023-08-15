@@ -1,0 +1,70 @@
+.satTest {
+  text-align: center;
+  margin: 20px;
+
+  .satTitle {
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    padding: 20px 0;
+
+    h1 {
+      margin: 0;
+    }
+  }
+
+  .satContent {
+    background: linear-gradient(-45deg, #a9508a, #ec2a7b);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+
+    .satInfo {
+      display: grid;
+      gap: 20px;
+    }
+
+    .satInfoItem {
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      text-align: left;
+
+      h3 {
+        margin-top: 0;
+      }
+      p {
+        color: white;
+      }
+    }
+
+    .navButtons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+
+      .navButton {
+        background-color: #ec2a7b94;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 20px;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #ec2a7b;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .satContent {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}

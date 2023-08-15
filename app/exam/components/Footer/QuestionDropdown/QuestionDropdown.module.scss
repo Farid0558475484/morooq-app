@@ -1,0 +1,19 @@
+.dropdownMenu {
+  position: absolute;
+  bottom: 100%;
+  background-color: #f8f8f8;
+  border: 1px solid #f36060;
+  list-style: none;
+  display: flex;
+  padding: 0px;
+  left: auto;
+}
+
+.dropdownMenuItem {
+  padding: 10px;
+}
+
+.activeButton {
+  background-color: #f36060;
+  color: white;
+}
