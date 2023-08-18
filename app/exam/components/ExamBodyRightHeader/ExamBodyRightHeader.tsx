@@ -5,7 +5,7 @@ import React from "react";
 import s from "./ExamBodyRightHeader.module.scss";
 import Button from "./../../../components/Button/Button";
 
-function ExamBodyRightHeader({ currentIndex, handleToggleAbcButtonVisible }) {
+function ExamBodyRightHeader({ currentIndex, handleToggleAbcButtonVisible }): JSX.Element {
   //   const [isLike, setIsLike] = useState(false);
 
   //   const handleLike = () => {
@@ -14,6 +14,7 @@ function ExamBodyRightHeader({ currentIndex, handleToggleAbcButtonVisible }) {
 
   return (
     <div className={s.BodyRightContent}>
+        
       <div className={s.count}>
         <p className={s.countIndex}>{currentIndex + 1}</p>
       </div>

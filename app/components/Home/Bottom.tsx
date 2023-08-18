@@ -1,11 +1,8 @@
 import React from "react";
 import Link from "next/link";
-
 import CardItem from "./CardItem";
 import Button  from "./../Button/Button";
-
 import styles from "./Bottom.module.scss";
-
 
 async function Bottom() {
   return (

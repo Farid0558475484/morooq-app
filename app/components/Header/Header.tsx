@@ -11,7 +11,7 @@ export async function Header() {
       <div className={styles.container}>
         <div className={styles.headerLogo}>
           <Link href="/">
-            <Image src={logo} alt="Logo" width={150} height={70} />
+            <Image src={logo} alt="Logo" width={150} height={70} loading="lazy"/>
           </Link>
         </div>
         <div className={styles.headerSignIn}>
@@ -22,6 +22,7 @@ export async function Header() {
             alt="Morooq.com"
             width={30}
             height={30}
+            loading="lazy"
           />
         </div>
       </div>

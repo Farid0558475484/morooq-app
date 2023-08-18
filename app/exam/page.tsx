@@ -8,7 +8,7 @@ import Button from "./../components/Button/Button";
 import getData, { User, Question } from "./../api/route";
 import s from "./Exam.module.scss";
 
-export default function Exam(): User {
+export default function Exam(): JSX.Element {
 
   const [data, setData] = useState<Question[]>([]);
   const [width, setWidth] = useState<number>(50);
@@ -186,7 +186,7 @@ export default function Exam(): User {
 
               <Button
                 appearance="pink"
-                className={s.rightButton}
+                 className={s.rightButton}
                 onClick={() => handleClick("examBodyRight")}
               >
                 Right
@@ -201,7 +201,7 @@ export default function Exam(): User {
         handlePrevQuestion={handlePrevQuestion}
         handleNextQuestion={handleNextQuestion}
         handleToggleAbcButtonVisible={handleToggleAbcButtonVisible}
-        setSelectedABCOptions={setSelectedABCOptions} // Добавлен этот пропс
+        setSelectedABCOptions={setSelectedABCOptions} 
         setCurrentIndex={setCurrentIndex}
       />
     </>

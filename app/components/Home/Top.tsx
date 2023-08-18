@@ -5,9 +5,9 @@ async function Top() {
     <div className={styles.topContainer}>
       <div className={styles.header}>
         <div className={styles.headerText}>
-          <p>
+          <h1>
             Welcome, Farid! Take a practice test and get ready for test day.
-          </p>
+          </h1>
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@ import SatText from "./page";
 
 import styles from "./Loading.module.scss";
 
-export async function Loading() {
+async function Loading() {
   return (
     <div className={styles.loadingContainer}>
       <div className={styles.loadingSpinner}></div>
@@ -16,12 +16,11 @@ export async function Loading() {
   );
 }
 
-async function SuspenseSatText() {
+async function LoadingSatText() {
   return (
     <Suspense fallback={<Loading />}>
       <SatText />
     </Suspense>
   );
 }
-
-export default SuspenseSatText;
+export default LoadingSatText;

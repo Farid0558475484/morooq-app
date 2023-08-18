@@ -1,7 +1,7 @@
 export interface User {
   data: any;
   // questiontId: number;
-  currentIndex: number;
+  currentIndex: number | null;
   // questionTitle: string;
   // questionIndex: number;
   optionIndex: number;
@@ -16,6 +16,7 @@ export interface User {
   handleFinishExam: () => void;
   setCurrentIndex: (index: number) => void;
   handleToggleAbcButtonVisible: () => void;
+  setSelectedABCOptions: (index: any) => void;
 }
 export interface AnswerOption {
   answerOptionTitle: string;
@@ -31,10 +32,6 @@ export interface Question {
   // Другие поля...
 }
 
-// export interface Data {
-//   data: User[];
-//   // ... другие поля ...
-// }
 
 export default async function getData(): Promise<User> {
   const randomCourseExamId = Math.floor(Math.random() * 100) + 1;
@@ -48,4 +45,5 @@ export default async function getData(): Promise<User> {
   }
 
   return res.json();
+
 }

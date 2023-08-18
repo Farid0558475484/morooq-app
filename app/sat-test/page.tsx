@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import  Button  from "./../components/Button/Button";
+import Button from "./../components/Button/Button";
+import P from "./../components/P/P";
 import s from "./SatText.module.scss";
 
 interface SatInfoItemProps {
@@ -12,7 +13,7 @@ function SatInfoItem({ title, content }: SatInfoItemProps): JSX.Element {
   return (
     <div className={s.satInfoItem}>
       <h3>{title}</h3>
-      <p>{content}</p>
+      <P appearance="white">{content}</P>
     </div>
   );
 }
@@ -41,10 +42,10 @@ async function SatText() {
         </div>
         <div className={s.navButtons}>
           <Link href="/">
-          <Button appearance="pink">Prev</Button>
+            <Button appearance="pink">Prev</Button>
           </Link>
           <Link href="/exam">
-          <Button appearance="pink">Next</Button>
+            <Button appearance="pink">Next</Button>
           </Link>
         </div>
       </div>
