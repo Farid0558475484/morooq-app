@@ -1,0 +1,167 @@
+.examBody {
+  display: flex;
+  border-bottom: dashed 5px #ec2a7b;
+  // margin: 20px 0;
+}
+
+.examBodyLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: solid 5px #ec2a7b;
+  padding: 0 20px;
+  position: relative;
+  button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  overflow-y: auto;
+  height: 600px;
+}
+@media screen and (max-width: 768px) {
+  .examBodyLeft {
+    padding: 0;
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.examBodyRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  position: relative;
+  .rightButton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+}
+
+.answerBody {
+  min-width: 450px;
+  position: relative;
+  display: flex;
+  // justify-content: flex-start;
+  justify-content: space-between;
+
+  align-items: center;
+  // gap: 350px;
+  // min-width: 350px;
+
+  margin: 20px 0;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 0 20px;
+}
+@media (max-width: 768px) {
+  .answerBody {
+    min-width: 60px;
+  }
+}
+
+.answerBodyActive::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 1px;
+  background-color: gray;
+}
+
+.answerBodyAbc {
+  position: relative;
+}
+// .answerVariant {
+//   border: 3px solid black;
+//   border-radius: 20px;
+//   padding: 7px 12px;
+//   margin: 5px;
+// }
+
+.redBorder {
+  border: 3px solid red;
+}
+.redColor {
+  border: 3px solid red;
+}
+
+.abcButton {
+  background-color: #ec2a7b;
+  border-radius: 10px;
+  padding: 0px 6px;
+  color: white;
+  // border: none;
+}
+
+.BodyRightAnswer {
+  overflow-y: auto;
+  height: 450px;
+}
+
+.examFooterCenter {
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+}
+
+.answerBodyAbc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.rightButton {
+  display: inline-block;
+  background-color: var(--pink);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--pink-light);
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+    z-index: -1;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  &:hover:before {
+    transform: translateX(0);
+  }
+}
+
+.abcAnswerButton {
+  background-color: var(--pink);
+  border-radius: 10px;
+  padding: 0px 6px;
+  color: white;
+  border: none;
+}
