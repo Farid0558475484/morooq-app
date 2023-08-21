@@ -1,0 +1,27 @@
+.sidebar {
+  background: #191c24;
+  color: white;
+  // height: 83vh;
+  max-height: 100vh;
+  min-width: 200px;
+
+  overflow-y: auto;
+  // border-radius: 20px;
+  .sidebarTitle {
+    text-align: center;
+    a {
+      text-decoration: none !important;
+    }
+    p {
+      width: 200px;
+      padding: 10px 0;
+      cursor: pointer;
+      color: white;
+      &:hover {
+        background: #ec2a7b;
+        border-radius: 20px;
+        color: rgb(240, 240, 240);
+      }
+    }
+  }
+}

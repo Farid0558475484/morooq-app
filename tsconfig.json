@@ -28,7 +28,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/(site)/exam/components/Footer/Footer.tsx"
-, "app/(site)/exam/components/ExamQuestion/ExamQuestion.tsx"  ],
+    "app/(site)/exam/components/Footer/Footer.tsx",
+    "app/(site)/exam/components/ExamQuestion/ExamQuestion.tsx"
+  ],
   "exclude": ["node_modules"]
 }
